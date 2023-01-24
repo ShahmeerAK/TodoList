@@ -1,0 +1,11 @@
+<div class="container my-2">
+<h4>Add a Task</h4>
+<form (ngSubmit)="onSubmit()">
+    <label for="title"><b>Title</b></label>
+    <input id="title" name="title" class="form-control my-2" type="text" [(ngModel)]="title" aria-label="default input example">
+    <label for="desc"><b>Description</b></label>
+    <input name="desc" id="desc" class="form-control form-control-sm my-2" type="text" [(ngModel)]="desc"
+    aria-label=".form-control-sm example">
+    <button [disabled]="!title || !desc" type="Submit" class="btn btn-success">Add Todo</button>
+</form>
+</div>
