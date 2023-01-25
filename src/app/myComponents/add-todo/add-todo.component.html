@@ -1,11 +1,17 @@
-<div class="container my-2">
-<h4>Add a Task</h4>
-<form (ngSubmit)="onSubmit()">
-    <label for="title"><b>Title</b></label>
-    <input id="title" name="title" class="form-control my-2" type="text" [(ngModel)]="title" aria-label="default input example">
-    <label for="desc"><b>Description</b></label>
-    <input name="desc" id="desc" class="form-control form-control-sm my-2" type="text" [(ngModel)]="desc"
-    aria-label=".form-control-sm example">
-    <button [disabled]="!title || !desc" type="Submit" class="btn btn-success">Add Todo</button>
+<h3>ADD A TASK</h3>
+<mat-card class="cardAdd2">
+<form class="example-form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width">
+        <mat-label>Title</mat-label>
+        <input matInput id="title" name="title"   [(ngModel)]="title">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Description</mat-label>
+        <textarea matInput name="desc" id="desc" type="text" [(ngModel)]="desc"></textarea>
+    </mat-form-field>
+    <div class="addButton">
+    <button  mat-raised-button [disabled]="!title || !desc" type="Submit" color="primary">Add Task</button>
+    </div>
 </form>
-</div>
+</mat-card>

@@ -1,0 +1,32 @@
+.mainCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+  
+}
+
+.subCard {
+    flex: 1 1 0;
+    margin: 24px;
+    text-align: center;
+    word-break: break-all;
+    min-height: 0;
+}
+
+.subCC {
+    margin-left: 70px;
+}
+/*
+.mainCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.subCard {
+    flex: 1 0 100%;
+    margin: 24px;
+    text-align: center;
+    word-break: break-all;
+}*/

@@ -1,11 +1,11 @@
-<h5 [ngClass]="{'strike': !todo.active}">{{todo.title}}</h5>
-<p [ngClass]="{'strike': !todo.active}">{{todo.desc}}</p>
-<div class="input-group container mb-3">
-    <div class="input-group-text">
-        <input id="todo{{i}}" class="form-check-input mt-0" (click)="onCheckBoxClick(todo)" [checked]="!todo.active" type="checkbox" value="" aria-label="Checkbox for following text input">
-    <label class="form-check-label" for="todo{{i}}">Mark as Done</label>
-    </div>
-</div>
-<button class="btn btn-danger" (click)="onClick(todo)">Delete</button>
-<div class="my-3">
-</div>
+<mat-card >
+    <h5 [ngClass]="{'strike': !todo.active}">{{todo.title}}</h5>
+    <p [ngClass]="{'strike': !todo.active}">{{todo.desc}}</p>
+
+    <mat-checkbox class="example-margin" id="todo{{i}}" class="form-check-input " (click)="onCheckBoxClick(todo)"
+        [checked]="!todo.active" [(ngModel)]="checked"></mat-checkbox>
+    <button class="deleteIcon example-margin" mat-fab color="warn" (click)="onClick(todo)">
+        <mat-icon>delete</mat-icon>
+    </button>
+
+</mat-card>

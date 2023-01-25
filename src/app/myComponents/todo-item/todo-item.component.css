@@ -1,3 +1,16 @@
 .strike{
     text-decoration: line-through;
 }
+
+.m2{
+    display: flex;
+}
+
+
+.deleteIcon{
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    margin-right: 0;
+}
+

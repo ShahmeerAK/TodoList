@@ -1,0 +1,24 @@
+h3{
+    margin-top: 10px;
+    text-align: center;
+    margin-left: -340px;
+    color: rgb(27, 57, 128);
+}
+.cardAdd2{
+    width: 50%;
+    margin: auto;
+}
+.example-form {
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+}
+
+.example-full-width {
+    width: 50%;
+}
+.addButton{
+    width: 50%;
+    margin-left: 8px;
+    margin-bottom: 2px;
+}

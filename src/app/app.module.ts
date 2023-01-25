@@ -9,6 +9,12 @@ import { AddTodoComponent } from './myComponents/add-todo/add-todo.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './myComponents/navbar/navbar.component';
 import { AboutComponent } from './myComponents/about/about.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { AboutComponent } from './myComponents/about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
