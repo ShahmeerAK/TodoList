@@ -1,21 +1,28 @@
 .mainCards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
-  
+    justify-content: center;
+}
+.tHeading{
+    margin-left: 160px;
+}
+.main2 {
+    display: flex !important;
+    flex-wrap: wrap;
+    margin: 24px;
+
 }
 
 .subCard {
-    flex: 1 1 0;
-    margin: 24px;
-    text-align: center;
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
     word-break: break-all;
-    min-height: 0;
+    min-height: 300px;
+    width: 200px;
 }
 
-.subCC {
-    margin-left: 70px;
-}
+
 /*
 .mainCards {
     display: flex;

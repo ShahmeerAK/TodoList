@@ -1,16 +1,49 @@
-.strike{
+.strike {
     text-decoration: line-through;
 }
 
-.m2{
+.hCT {
+    border-bottom: 0.3px solid #ef5350;
+}
+
+.m2 {
     display: flex;
 }
 
-
-.deleteIcon{
+.cardA {
+    position: relative;
     display: flex;
-    margin: auto;
-    margin-top: 15px;
-    margin-right: 0;
+    word-break: break-all;
+    height: 200px;
+    width: 300px;
+    padding: 10px;
 }
 
+.cardA>p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    /* start showing ellipsis when 3rd line is reached */
+    white-space: pre-wrap;
+
+}
+
+.cardA>p:hover {
+    overflow: visible;
+}
+
+
+.checkBox {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
+.deleteIcon {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+}

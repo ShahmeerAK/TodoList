@@ -1,16 +1,21 @@
 <h1 class="text-center"> Todo List </h1>
 
-<app-add-todo (todoAdd)="addTodo($event)" ></app-add-todo>
-<div class="subCC">
-<h4>Tasks</h4>
-</div>
-<div  *ngIf="this.todos.length===0; else elseBlock">NO Tasks Yet.</div>
+
+<app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+<hr>
+    <h4 class="tHeading" >Tasks</h4>
+
+<div *ngIf="this.todos.length===0; else elseBlock">NO Tasks Yet.</div>
 <ng-template #elseBlock>
 
-<div class="mainCards">
-<div  *ngFor="let todo of todos; index as i">
-    <app-todo-item class="subCard" [todo]="todo" [i]="i" (todoDelete)="deleteTodo($event)" (todoCheckBox)="toggleTodo($event)" ></app-todo-item>
-</div>
-</div>
-</ng-template>
+    
 
+     <div class="mainCards">
+        <div class="main2" *ngFor="let todo of todos; index as i">
+            <app-todo-item [todo]="todo" [i]="i" (todoDelete)="deleteTodo($event)"
+                (todoCheckBox)="toggleTodo($event)">
+            
+            </app-todo-item>
+        </div>
+    </div> 
+</ng-template>
