@@ -1,0 +1,4 @@
+html {
+    --lh: 1.4rem;
+    line-height: var(--lh);
+}
